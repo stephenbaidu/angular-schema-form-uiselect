@@ -1,4 +1,4 @@
-angular.module('schemaForm-uiselect', ['schemaForm', 'ui.select']).config(
+angular.module('schemaForm').config(
 ['schemaFormProvider', 'schemaFormDecoratorsProvider', 'sfPathProvider',
   function(schemaFormProvider,  schemaFormDecoratorsProvider, sfPathProvider) {
 

@@ -6,7 +6,6 @@ describe('Schema form', function() {
   describe('directive', function() {
     beforeEach(module('templates'));
     beforeEach(module('schemaForm'));
-    beforeEach(module('schemaForm-uiselect'));
     beforeEach(
       //We don't need no sanitation. We don't need no though control.
       module(function($sceProvider) {
