@@ -6,35 +6,21 @@ This ui-select add-on uses as the name implies the ui-select plugin to provide a
 Installation
 ------------
 The editor is an add-on to the Bootstrap decorator. To use it, just include
-`schema-form-uiselect.min.js`.
+`angular-schema-form-uiselect.min.js`.
+
+You'll need to include a few additional libraries to use uiselect:
+
+1. [angular-underscore](https://github.com/floydsoft/angular-underscore)
+2. [ui.select](https://github.com/angular-ui/ui-select)
+3. [angular-translate](https://github.com/angular-translate/angular-translate)
+4. Make sure to load the above libraries in your module
+```javascript
+angular.module('yourModule', [..., 'angular-underscore', 'ui.select', 'pascalprecht.translate', ...]);
+```
 
 Easiest way is to install is with bower, this will also include dependencies:
 ```bash
-$ bower install chengz/schema-form-uiselect
-```
-
-You'll need to load a few additional files to use the editor:
-
-**Be sure to load this projects files after you load angular schema form**
-
-Example
-
-```HTML
-<script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-<script src="bower_components/angular-translate/angular-translate.min.js"></script>
-<script src='bower_components/angular-ui-select/dist/select.js'></script>
-<script src="bower_components/tv4/tv4.js"></script>
-<script src="bower_components/objectpath/lib/ObjectPath.js"></script>
-<script src="bower_components/angular-schema-form/dist/schema-form.min.js"></script>
-<script src="bower_components/angular-schema-form/dist/bootstrap-decorator.min.js"></script>
-<script src="schema-form-strapselect.js"></script>
-```
-
-When you create your module, be sure to depend on this project's module as well.
-
-```javascript
-angular.module('yourModule', ['schemaForm', 'schemaForm-uiselect']);
+$ bower install stephenbaidu/angular-schema-form-uiselect
 ```
 
 Usage
