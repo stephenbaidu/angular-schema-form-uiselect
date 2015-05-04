@@ -1,7 +1,7 @@
 {
   "name": "angular-schema-form-uiselect",
   "main": [
-    "schema-form-uiselect.min.js"
+    "angular-schema-form-uiselect.min.js"
   ],
   "version": "0.1.0",
   "authors": [
